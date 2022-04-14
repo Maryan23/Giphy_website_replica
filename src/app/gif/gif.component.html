@@ -1,0 +1,11 @@
+<div align="center" class="gif">
+    <h1>GIPHY WEBSITE</h1>
+    <app-search></app-search>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" *ngFor="let gif of gifs">
+                <img height="200em" width="200em"src="{{gif.images.downsized.url}}" alt="Gifs">
+            </div>
+        </div>
+    </div>
+</div>

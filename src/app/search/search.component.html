@@ -1,0 +1,7 @@
+<div align ="center" class="search">
+    <input type="search" #gif (keyup)="showResults(gif.value)" placeholder="Search GIF by Name">
+    <div class="col-md-6" *ngFor="let gif of results">
+        <img src="{{gif.images.original.url}}" alt="Gifs">
+        <p>{{gif.title}}</p>
+    </div>
+</div>
